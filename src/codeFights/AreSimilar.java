@@ -45,7 +45,7 @@ public class AreSimilar {
 		}
 		else
 		return false;
-	}
+	}  //C:\Users\durfm\workspaceSummer2019\PlayingAround
 	
 	
 }//end class
