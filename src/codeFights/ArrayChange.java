@@ -20,30 +20,21 @@ public class ArrayChange {
 	int[] test1 = {-1000, 0, -2, 0};
 	int[] test2 = {1,1,1};
 	int[] test3 = {2,1,10,1};
-	System.out.println(arrayChange(test1));
+	System.out.println(arrayChange(test3));
 	}//end main
 
 	
 	
 	
 static	int arrayChange(int[] inputArray) {
-		int temp=0;
-		
-		for(int i=0; i<inputArray.length-1;i++){
-			int temp2=inputArray[i];
-			if(inputArray[i]> inputArray[i+1]){
-				temp2+=1;
-				inputArray[i]=temp2;
-				temp+= (temp2- inputArray[i+1]);
-			}//end if
-			if(inputArray[i]==inputArray[i+1]){
-				temp++;
-			}
-		}//end for
-
-		
-		
-		return temp;
+    int answer = 0;
+    for(int i = 0;i < inputArray.length - 1;i++){
+        if(inputArray[i] >= inputArray[i + 1]){
+            answer += inputArray[i] + 1 - inputArray[i + 1];
+            inputArray[i + 1] = inputArray[i] + 1;
+        }
+    }
+    return answer;
 	}//end method
 	
 	
