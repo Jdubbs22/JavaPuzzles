@@ -14,20 +14,20 @@ public class FizzBuzz {
 		for(int i=1;i<=100;i++){
 		 if( i % 15==0){
 				System.out.print(" FizzBuzz");
-			}
+			}//end if
 		 else if(i %3==0){
 				System.out.print(" Fizz ");
-			}
+			}//end else
 			
 			else if(i % 5 ==0){
 				System.out.print(" Buzz ");
 				
-			}
+			}//end else
 			
 			else{
 				System.out.print(" "+i+" ");
-			}
-		}
+			}//end else
+		}//end for
 		
 	}//end method
 	
