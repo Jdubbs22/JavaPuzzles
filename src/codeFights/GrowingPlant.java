@@ -18,7 +18,7 @@ public class GrowingPlant {
 		int firstHeight =0;
 		int height =upSpeed - downSpeed;
 		int count=0;
-		int day =0;
+		int day =1;
 		
 		if(upSpeed>=desiredHeight){
 			return 1;
@@ -28,10 +28,11 @@ public class GrowingPlant {
 				height+= upSpeed;
 				day++;
 				height -= downSpeed;
+
 			}//end while
 		}//end else
 		
-		
+		//test of git
 		
 		/*while(firstHeight < desiredHeight){
 			height += upSpeed - downSpeed;
